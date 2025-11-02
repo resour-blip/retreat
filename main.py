@@ -14,7 +14,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import gspread
 from google.oauth2.service_account import Credentials
 
-from steps import WELCOME_TEXT, REMINDER_TEXT, MAIN_VIDEO_FILE_ID, auto_funnel
+from steps import WELCOME_MEDIA_FILE_ID, WELCOME_MEDIA_TYPE, REMINDER_TEXT, MAIN_VIDEO_FILE_ID, auto_funnel
 from config import BOT_TOKEN, OWNER_USERNAME, GOOGLE_SHEET_ID
 
 # === Логгирование ===
@@ -180,3 +180,4 @@ if __name__ == "__main__":
 
     # Запускаем бота
     asyncio.run(run_bot())
+
