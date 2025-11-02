@@ -1,4 +1,7 @@
 # config.py
-BOT_TOKEN = "8501144919:AAHaq0uIt2Td0lvFHSDelUQcz2H3PUBVPgw"
-OWNER_USERNAME = "ysbariev"  # без @
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+OWNER_USERNAME = os.getenv("O_USER")
+#GOOGLE_SHEET_ID = os.getenv("GOOGLE_SHEET_ID")
 GOOGLE_SHEET_ID = "ВСТАВЬ_СЮДА_ID_ТАБЛИЦЫ"
