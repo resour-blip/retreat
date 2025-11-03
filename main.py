@@ -70,7 +70,14 @@ async def cmd_start(message: types.Message, state: FSMContext):
     log_to_sheet(user_id, username, "start", "started")
     await state.set_state(UserState.waiting_for_video_click)
 
-    if WELCOME_MEDIA_TYPE == "video":
+    # Отправляем кружок (всегда, если WELCOME_MEDIA_TYPE == "video_note")
+    if WELCOME_MEDIA_TYPE == "video_note":
+        await message.answer_video_note(video_note=WELCOME_MEDIA_FILE_ID)
+        await message.answer(
+            "🎥 Готов к эксперименту?",
+            reply_markup=inline_btn("Смотреть видео", "watch_video")
+        )
+    elif WELCOME_MEDIA_TYPE == "video":
         await message.answer_video(
             video=WELCOME_MEDIA_FILE_ID,
             reply_markup=inline_btn("Смотреть видео", "watch_video")
@@ -91,6 +98,7 @@ async def cmd_start(message: types.Message, state: FSMContext):
             reply_markup=inline_btn("Смотреть видео", "watch_video")
         )
 
+    # Напоминание
     scheduler.add_job(
         send_pre_video_reminder,
         "date",
