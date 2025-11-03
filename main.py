@@ -73,7 +73,7 @@ async def cmd_start(message: types.Message, state: FSMContext):
     # Отправляем кружок (всегда, если WELCOME_MEDIA_TYPE == "video_note")
     if WELCOME_MEDIA_TYPE == "video_note":
         # await message.answer_video_note(video_note=WELCOME_MEDIA_FILE_ID)        
-        await message.answer_video_note(video_note="DQACAgIAAxkBAAE9TKNpB2e_tCGXA6_h0Z28zjgV_V6YVwACJYIAAlIlsEoAAaGqCo0rmKY2BA")
+        await message.answer_video_note(video_note="DQACAgIAAxkBAAE9WfFpCN-Oeas6n1_Zl3F8QizFGS3XJQACrIgAAgLpSUiyyb8IyY5kEjYE")
         await message.answer(
             "🎥 Готов к эксперименту?",
             reply_markup=inline_btn("Смотреть видео", "watch_video")
@@ -211,4 +211,5 @@ if __name__ == "__main__":
     flask_thread = threading.Thread(target=run_flask, daemon=True)
     flask_thread.start()
     asyncio.run(run_bot())
+
 
