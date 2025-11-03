@@ -1,6 +1,6 @@
 # steps.py
 
-WELCOME_MEDIA_FILE_ID = "DQACAgIAAxkBAAE9TKNpB2e_tCGXA6_h0Z28zjgV_V6YVwACJYIAAlIlsEoAAaGqCo0rmKY2BA"  # ← замени на свой file_id
+WELCOME_MEDIA_FILE_ID = "BAACAgIAAxkBAAE9VZFpCIIwnG4TMKU3y-rCp9o_6YkIGgAC24cAAsMWQUgl22cXW9ssPjYE"  # ← замени на свой file_id
 WELCOME_MEDIA_TYPE = "video"  # варианты: "video", "photo", "audio"
 
 REMINDER_TEXT = "Хочешь эксперимент? Он в видео 🎥"
@@ -48,3 +48,4 @@ auto_funnel = [
     }
 
 ]
+
