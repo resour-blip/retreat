@@ -6,7 +6,7 @@ WELCOME_MEDIA_TYPE = "video"  # варианты: "video", "photo", "audio"
 REMINDER_TEXT = "Хочешь эксперимент? Он в видео 🎥"
 
 # 🔑 Вставь сюда file_id своего видео (полученный через @RawDataBot)
-MAIN_VIDEO_FILE_ID = "AAMCAgADGQEAAT1M12kHb6x6u8iAx1Jz-b7rdeeU0N8iAAJwgwAC5TMoSCNm9p1D2FeBAQAHbQADNgQ"  # ← ОБЯЗАТЕЛЬНО замени!
+MAIN_VIDEO_FILE_ID = "BAACAgIAAxkBAAE9TNdpB2-servIgMdSc_m-63XnlNDfIgACcIMAAuUzKEgjZvadQ9hXgTYE"  # ← ОБЯЗАТЕЛЬНО замени!
 
 auto_funnel = [
     {
@@ -48,5 +48,6 @@ auto_funnel = [
     }
 
 ]
+
 
 
