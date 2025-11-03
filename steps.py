@@ -9,7 +9,7 @@ WELCOME_MEDIA_TYPE = "video_note"  # ← ключевое изменение!
 REMINDER_TEXT = "Хочешь эксперимент? Он в видео 🎥"
 
 # Основное видео (обычное, не кружок!)
-MAIN_VIDEO_FILE_ID = "AAMCAgADGQEAAT1bJmkI6kVrBNE7JuEnNDQnr2B15hZ2AAJNiQACAulJSAAB54J_QndTJwEAB20AAzYE"
+MAIN_VIDEO_FILE_ID = "BAACAgIAAxkBAAE9WyZpCOpFawTROybhJzQ0J69gdeYWdgACTYkAAgLpSUgAAeeCf0J3Uyc2BA"
 # Все шаги авто-воронки — ТОЛЬКО через file_id из Telegram (не Google Drive!)
 auto_funnel = [
     {
@@ -50,4 +50,5 @@ auto_funnel = [
         "description": "final_case"
     }
 ]
+
 
