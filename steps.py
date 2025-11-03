@@ -1,22 +1,20 @@
 # steps.py
 
-# steps.py
+# Это file_id именно от ВИДЕОКРУЖКА (поле "video_note" в @RawDataBot)
+WELCOME_MEDIA_FILE_ID = "DQACAgIAAxkBAAE9TKNpB2e_tCGXA6_h0Z28zjgV_V6YVwACJYIAAlIlsEoAAaGqCo0rmKY2BA"
 
-# Убедись, что WELCOME_MEDIA_FILE_ID — это file_id обычного видео (поле "video" в @RawDataBot)
-WELCOME_MEDIA_FILE_ID = "BAACAgIAAxkBAAE9VZFpCIIwnG4TMKU3y-rCp9o_6YkIGgAC24cAAsMWQUgl22cXW9ssPjYE"
-
-# Варианты: "video", "photo", "audio" (НЕ "video_note"!)
-WELCOME_MEDIA_TYPE = "video"
+# Обязательно установи "video_note", чтобы отправлялся кружок
+WELCOME_MEDIA_TYPE = "video_note"  # ← ключевое изменение!
 
 REMINDER_TEXT = "Хочешь эксперимент? Он в видео 🎥"
 
-# 🔑 Вставь сюда file_id своего основного видео (полученный через @RawDataBot)
+# Основное видео (обычное, не кружок!)
 MAIN_VIDEO_FILE_ID = "BAACAgIAAxkBAAE9TNdpB2-servIgMdSc_m-63XnlNDfIgACcIMAAuUzKEgjZvadQ9hXgTYE"
-
+# Все шаги авто-воронки — ТОЛЬКО через file_id из Telegram (не Google Drive!)
 auto_funnel = [
     {
         "type": "audio",
-        "file_id": "YOUR_AUDIO_FILE_ID_1",  # ← замени на file_id из Telegram (не URL!)
+        "file_id": "YOUR_AUDIO_FILE_ID_1",  # ← замени на file_id из Telegram
         "delay_minutes_after_video": 30,
         "description": "objection_audio"
     },
@@ -52,5 +50,3 @@ auto_funnel = [
         "description": "final_case"
     }
 ]
-
-
