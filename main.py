@@ -77,7 +77,7 @@ async def cmd_start(message: types.Message, state: FSMContext):
 
     # Отправляем медиа-«кружок»
     if WELCOME_MEDIA_TYPE == "video":        
-        await message.answer_video_note(video_note=WELCOME_MEDIA_FILE_ID)    
+        # await message.answer_video_note(video_note=WELCOME_MEDIA_FILE_ID)    
         await message.answer("🎥 Готов к эксперименту?", reply_markup=btn("Смотреть видео"))
     elif WELCOME_MEDIA_TYPE == "photo":
         await message.answer_photo(photo=WELCOME_MEDIA_FILE_ID, reply_markup=btn("Смотреть видео"))
@@ -186,6 +186,7 @@ if __name__ == "__main__":
 
     # Запускаем бота
     asyncio.run(run_bot())
+
 
 
 
